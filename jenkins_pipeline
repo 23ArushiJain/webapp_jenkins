@@ -1,11 +1,11 @@
-@Library("shared-library") _
+@Library(shared-lib) _
 pipeline {
     agent any
 
     stages {
         stage('gitcheckout') {
             steps {
-                gitCheckout()
+                gitCheckout(name:"23ArushiJain" ,repo: "webapp_jenkins.git")
             }
         }
     }
